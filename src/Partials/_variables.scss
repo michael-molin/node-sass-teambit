@@ -2,3 +2,20 @@ $primary_color: #ffe7d2;
 $secondary_color: white;
 $hover-color: #6476ab;
 $font: 'Lora', serif;
+$padding-scheda: 70px;
+
+@mixin clearfix() {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin default-button() {
+    border: 1px solid $hover-color;
+    background-color: $secondary_color;
+    color: $hover-color;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+}

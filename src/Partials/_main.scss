@@ -1,0 +1,54 @@
+
+
+
+.scheda-1 {
+
+    padding: $padding-scheda;
+
+    & * {
+        margin-bottom: 25px;
+    }
+
+    &-sx {
+        float: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+
+
+        &-btn  {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            & * {
+                margin: 15px 30px 0 0;
+
+            }
+
+            & button {
+                @include default-button;
+                color: $secondary_color;
+                background-color: $hover-color;
+            }
+        }
+
+        & .small-mail {
+            margin-top: -15px;
+        }
+    }
+
+    &-dx {
+        float: left;
+        width: 50%;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &-sx:after, &-dx:after {
+        @include clearfix;
+    }
+}
