@@ -6,6 +6,7 @@
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 .container-fullwidth-secondary {
@@ -213,7 +214,7 @@ nav img {
 }
 
 .scheda-3 .blocco-float-img img {
-  max-width: 768px;
+  max-width: 728px;
 }
 
 .scheda-3 .blocco-float-testo-dx {
@@ -408,6 +409,7 @@ footer .footer-dx {
   float: left;
   width: 63%;
   display: flex;
+  margin-bottom: 40px;
 }
 
 footer .footer-list {
