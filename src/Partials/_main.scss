@@ -7,8 +7,7 @@
     }
 
     &-sx {
-        float: left;
-        width: 50%;
+        @include crea-float;
         display: flex;
         flex-direction: column;
 
@@ -37,8 +36,7 @@
     }
 
     &-dx {
-        float: left;
-        width: 50%;
+        @include crea-float;
 
         & img {
             width: 100%;
@@ -86,8 +84,58 @@
             }
         }
 
-
-
     }
 
+}
+
+.scheda-3 {
+width: 100vw;
+background-color: $secondary_color;
+
+    .blocco-float {
+        vertical-align: middle;
+        margin-bottom: 40px;
+
+        &-img {
+            @include crea-float;
+
+            & img {
+                max-width: 768px;
+            }
+        }
+
+        &-testo-dx {
+            @include crea-float;
+            display: flex;
+            justify-content: flex-start;
+
+
+            & img {
+                max-width: 270px;
+            }
+
+            .blocco-interno {
+                @include blocco-interno;
+            }
+        }
+
+        &-testo-sx {
+            @include crea-float;
+            display: flex;
+            justify-content: flex-end;
+
+            & img {
+                max-width: 270px;
+            }
+
+            .blocco-interno {
+                @include blocco-interno;
+            }
+        }
+    }
+
+}
+
+.scheda-3::after, .blocco-float:after {
+    @include clearfix;
 }

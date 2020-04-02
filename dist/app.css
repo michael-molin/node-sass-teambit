@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
 }
@@ -19,12 +25,6 @@ h1 {
 
 h2 {
   text-align: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 header {
@@ -100,6 +100,7 @@ nav img {
 .scheda-1-sx {
   float: left;
   width: 50%;
+  display: inline-block;
   display: flex;
   flex-direction: column;
 }
@@ -133,6 +134,7 @@ nav img {
 .scheda-1-dx {
   float: left;
   width: 50%;
+  display: inline-block;
 }
 
 .scheda-1-dx img {
@@ -192,5 +194,112 @@ nav img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.scheda-3 {
+  width: 100vw;
+  background-color: white;
+}
+
+.scheda-3 .blocco-float {
+  vertical-align: middle;
+  margin-bottom: 40px;
+}
+
+.scheda-3 .blocco-float-img {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+
+.scheda-3 .blocco-float-img img {
+  max-width: 768px;
+}
+
+.scheda-3 .blocco-float-testo-dx {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.scheda-3 .blocco-float-testo-dx img {
+  max-width: 270px;
+}
+
+.scheda-3 .blocco-float-testo-dx .blocco-interno {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.scheda-3 .blocco-float-testo-dx .blocco-interno * {
+  margin-bottom: 30px;
+}
+
+.scheda-3 .blocco-float-testo-dx .blocco-interno h3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.scheda-3 .blocco-float-testo-dx .blocco-interno p {
+  font-size: 20px;
+}
+
+.scheda-3 .blocco-float-testo-dx .blocco-interno a {
+  text-align: left;
+  text-decoration: none;
+  color: #6476ab;
+  font-size: 20px;
+}
+
+.scheda-3 .blocco-float-testo-sx {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.scheda-3 .blocco-float-testo-sx img {
+  max-width: 270px;
+}
+
+.scheda-3 .blocco-float-testo-sx .blocco-interno {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.scheda-3 .blocco-float-testo-sx .blocco-interno * {
+  margin-bottom: 30px;
+}
+
+.scheda-3 .blocco-float-testo-sx .blocco-interno h3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.scheda-3 .blocco-float-testo-sx .blocco-interno p {
+  font-size: 20px;
+}
+
+.scheda-3 .blocco-float-testo-sx .blocco-interno a {
+  text-align: left;
+  text-decoration: none;
+  color: #6476ab;
+  font-size: 20px;
+}
+
+.scheda-3::after,
+.blocco-float:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 

@@ -25,6 +25,12 @@ $padding-scheda: 70px;
     max-width: 1200px;
 }
 
+@mixin crea-float() {
+    float: left;
+    width: 50%;
+    display:inline-block;
+}
+
 @mixin scheda-2-card() {
     width: (100%/3);
     height: 200px;
@@ -42,4 +48,32 @@ $padding-scheda: 70px;
     align-items: center;
     justify-content: space-evenly;
     margin: 50px 0;
+}
+
+@mixin blocco-interno() {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+    & * {
+        margin-bottom: 30px;
+    }
+
+    & h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    & p {
+        font-size: 20px;
+    }
+
+    & a {
+        text-align: left;
+        text-decoration: none;
+        color: $hover-color;
+        font-size: 20px;
+    }
 }
