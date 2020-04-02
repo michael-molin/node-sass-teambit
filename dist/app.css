@@ -1,17 +1,24 @@
-.container-fullwidth {
+body {
+  position: relative;
+}
+
+.container-fullwidth-secondary {
   background-color: white;
   font-family: "Lora", serif;
 }
 
-.container {
-  max-width: 1200px;
-  position: relative;
-  margin: 0 auto;
+.container-fullwidth-primary {
+  background-color: #ffe7d2;
+  font-family: "Lora", serif;
 }
 
 h1 {
   font-size: 58px;
   line-height: 60px;
+}
+
+h2 {
+  text-align: center;
 }
 
 * {
@@ -20,10 +27,17 @@ h1 {
   box-sizing: border-box;
 }
 
-nav {
+header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1200px;
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
@@ -74,6 +88,8 @@ nav img {
 }
 
 .scheda-1 {
+  margin: 0 auto;
+  max-width: 1200px;
   padding: 70px;
 }
 
@@ -128,5 +144,53 @@ nav img {
   content: "";
   display: table;
   clear: both;
+}
+
+.scheda-1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.scheda-2 {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  background-color: #ffe7d2;
+}
+
+.scheda-2-img {
+  margin: 50px 0;
+  max-width: 280px;
+  height: auto;
+  text-align: center;
+}
+
+.scheda-2-container-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.scheda-2-card {
+  width: 33.3333333333%;
+  height: 200px;
+  text-align: center;
+}
+
+.scheda-2-card-img {
+  height: 105px;
+  margin-bottom: 30px;
+}
+
+.scheda-2-card-img img {
+  width: 140px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 

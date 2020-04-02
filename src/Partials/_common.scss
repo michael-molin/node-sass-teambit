@@ -1,15 +1,23 @@
-.container-fullwidth {
-    background-color: white;
+body {
+    position: relative;
+}
+
+.container-fullwidth-secondary {
+    background-color: $secondary_color;
     font-family: $font;
 }
 
-.container {
-    max-width: 1200px;
-    position: relative;
-    margin: 0 auto;
+.container-fullwidth-primary {
+    background-color: $primary_color;
+    font-family: $font;
 }
+
 
 h1 {
     font-size: 58px;
     line-height: 60px;
+}
+
+h2 {
+    text-align: center;
 }

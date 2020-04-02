@@ -19,3 +19,27 @@ $padding-scheda: 70px;
     border-radius: 5px;
     transition: 0.2s;
 }
+
+@mixin default-format() {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@mixin scheda-2-card() {
+    width: (100%/3);
+    height: 200px;
+    text-align: center;
+}
+
+@mixin scheda-2-card-img() {
+    width: 140px;
+    height: 100%;
+    object-fit: contain;
+}
+
+@mixin scheda-2-container() {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}

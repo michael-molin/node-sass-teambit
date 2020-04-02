@@ -1,8 +1,5 @@
-
-
-
 .scheda-1 {
-
+    @include default-format;
     padding: $padding-scheda;
 
     & * {
@@ -51,4 +48,46 @@
     &-sx:after, &-dx:after {
         @include clearfix;
     }
+}
+
+.scheda-1::after {
+    @include clearfix;
+}
+
+.scheda-2 {
+    @include default-format;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: $padding-scheda;
+    background-color: $primary_color;
+
+    &-img {
+        margin: 50px 0;
+        max-width: 280px;
+        height: auto;
+        text-align: center;
+    }
+
+    &-container-card {
+        @include scheda-2-container;
+    }
+
+    &-card {
+        @include scheda-2-card;
+
+        &-img {
+            height: 105px;
+            margin-bottom: 30px;
+
+            & img {
+                   @include scheda-2-card-img;
+            }
+        }
+
+
+
+    }
+
 }
