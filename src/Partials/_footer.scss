@@ -1,0 +1,56 @@
+footer {
+    @include default-format;
+    padding: $padding-scheda;
+    font-size: 16px;
+    font-family: "Lora", serif;
+
+    .footer-sx {
+        float: left;
+        width: 34%;
+        vertical-align: middle;
+        display:flex;
+        padding-right: 50px;
+
+        & img {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        & p {
+            margin-left: 20px;
+        }
+    }
+
+    .footer-sx:after {
+        @include clearfix;
+    }
+
+    .footer-dx {
+        float: left;
+        width: 63%;
+        display: flex;
+    }
+
+    .footer-list {
+        width: (100% / 5);
+        padding-right: 10px;
+
+        & span {
+            font-weight: bold;
+        }
+
+        & ul {
+            margin-top: 20px;
+
+            & li {
+                margin-bottom: 10px;
+                list-style: none;
+            }
+        }
+    }
+
+    .footer-dx:after {
+        @include clearfix;
+    }
+}

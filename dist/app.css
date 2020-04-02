@@ -372,3 +372,65 @@ nav img {
   color: #6476ab;
 }
 
+footer {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 70px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+}
+
+footer .footer-sx {
+  float: left;
+  width: 34%;
+  vertical-align: middle;
+  display: flex;
+  padding-right: 50px;
+}
+
+footer .footer-sx img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+footer .footer-sx p {
+  margin-left: 20px;
+}
+
+footer .footer-sx:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer .footer-dx {
+  float: left;
+  width: 63%;
+  display: flex;
+}
+
+footer .footer-list {
+  width: 20%;
+  padding-right: 10px;
+}
+
+footer .footer-list span {
+  font-weight: bold;
+}
+
+footer .footer-list ul {
+  margin-top: 20px;
+}
+
+footer .footer-list ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+footer .footer-dx:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
